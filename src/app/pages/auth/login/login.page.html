@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border" translucent="true" collapse="fade">
+	<ion-toolbar>
+		<ion-buttons
+			class="btn-container"
+			slot="primary"
+			[routerLink]="['/register']"
+		>
+			<ion-button fill="clear" class="btn-link btn-auth" size="large">
+				Créer un comte ici
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+	<div class="logo">
+		<ion-img
+			src="../../../../assets/images/logo.png"
+			alt="The Wisconsin State Capitol building in Madison, WI at night"
+		></ion-img>
+	</div>
+	<div class="auth-header">
+		<h1 class="ion-text-center">Connexion</h1>
+		<h3 class="ion-text-center">à l'espace de gestion de vos biens</h3>
+	</div>
+	<ion-card>
+		<ion-card-content>
+			<ion-input
+				mode="md"
+				label="Numéro whatsapp"
+				label-placement="floating"
+				fill="outline"
+				placeholder="Entrer le numéro"
+			></ion-input>
+			<br />
+
+			<ion-input
+				mode="md"
+				label="Mot de passe"
+				label-placement="floating"
+				fill="outline"
+				placeholder="Entrer le mot de passe"
+			></ion-input>
+			<br />
+		</ion-card-content>
+	</ion-card>
+	<div class="submit">
+		<ion-button expand="block">Je me connecte</ion-button>
+	</div>
+</ion-content>
